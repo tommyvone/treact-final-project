@@ -680,21 +680,67 @@ PRICING ↓
 
 .plan__button--individual {
   background: linear-gradient(115deg, #38b2ac, #81e6d9);
-  padding:9px 127px;
+  padding:11px 127px;
   color: white;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 900;
   margin-top: 16px;
-  border-radius: 900px;
   width: 100%;
   border:none;
 }
-.plans {
+.plan__button--business {
+  background: #f7fafc;
+  padding:11px 127px;
+  color: white;
+  font-size: 15px;
+  font-weight: 900;
+  margin-top: 16px;
+  width: 100%;
+  border:none;
+}
+.plan_button--ep{
+  background: linear-gradient(115deg, #f56565, #feb2b2);
+  color: #fff;
+  padding:11px 127px;
+  color: white;
+  font-size: 15px;
+  font-weight: 900;
+  margin-top: 16px;
+  width: 100%;
+  border:none;
+}
+
+
+.plans__personal--wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   border: 1px solid #eee8e8;
   width: calc(100% / 3);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.10), 0 1px 3px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+}
+.plans__business--wrapper {
+  display: flex;
+  background-color: #6415ff;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #eee8e8;
+  width: calc(100% / 3);
+  color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.10), 0 1px 3px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+}
+.plans__enterprces--wrapper{
+  display: flex;
+  background-color: #fafafa;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #eee8e8;
+  width: calc(100% / 3);
+  color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.10), 0 1px 3px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
 }
 .plan_name {
   display: flex;
@@ -703,8 +749,18 @@ PRICING ↓
   justify-content: center;
   margin-top: 16px;
 }
-.plan_price {
+.plan__price--personal{
   font-size: 48px;
+  font-weight: 900;
+}
+.plan__name--business,.plan_name--ep{
+  display: flex;
+  justify-content: center;
+}
+
+.plan_name--ep{
+  font-size: 20px;
+  font-weight: 900;
 }
 .plans_duration {
   display: flex;
@@ -725,13 +781,40 @@ PRICING ↓
   width: 100%;
   align-items: center;
   padding-bottom: 10px;
+  
 }
-.individual__options {
+.individual__options--business {
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+}
+.individual__options{
+ color: white;
+}
+
+
+.plans__duration--business, .plan__name--business,
+.plan__option{
+  color: white;
+  margin-top: 16px;
   font-size: 20px;
   font-weight: 700;
 }
-
-/* 
+.plan__button--business{
+  color: #6415ff;
+}
+.individual__options--personal{
+  color: black;
+}
+.plan__price--business{
+  font-size: 48px;
+  font-weight: 900;
+  color: white;
+  }
+  .plan__price--ep{
+    font-size: 48px;
+    font-weight: 900;
+  }
 
 TESTIMONIALS ↓
 
