@@ -85,9 +85,7 @@ main {
   height: 40px;
   width: 40px;
 }
-img {
-  width: 100%;
-}
+
 /* 
 
 NAVBAR ↓
@@ -992,6 +990,14 @@ PRICING section ↓s
   font-weight: 900;
   color: rgb(6, 6, 6);
 }
+.plans__blob{
+  position: absolute;
+  top: 300px;
+  right: 1135px;
+  z-index: -1;
+  width: 20%;
+  opacity: 0.3;
+}
 
 /*
   
@@ -1002,6 +1008,28 @@ TESTIMONIALS ↓
 
 #testimonials .row {
   display: flex;
+}
+.testimonial__img {
+  width:50%;
+}
+
+.testimonials__description{
+ margin-left: 32px;
+  
+}
+.fa,
+.fas {
+  font-family:"Font Awesome 5 Pro";
+  font-weight:900;
+  color: #ffb327;
+  margin-top: 32px;
+}
+.testimonial__title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #243e63;
+  margin-top: 32px;
+  margin-bottom: 16px;
 }
 
 /* 
