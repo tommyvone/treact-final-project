@@ -1310,11 +1310,24 @@ MOBILE RESPONSIVENESS ↓
   header .row {
     align-items: flex-end;
   }
+  .nav__link {
+  font-size: 20px;
+  font-weight: 900;
+  }
 }
 
 @media (max-width: 1024px) {
   .btn__menu {
     display: block;
+  }
+  .nav__links{
+    display: none;
+  }
+  .btn__menu{
+    margin-right: 350px;
+  }
+  .nav__logo{
+    margin-left: 350px;
   }
   header .row {
     flex-direction: column;
@@ -1328,7 +1341,28 @@ MOBILE RESPONSIVENESS ↓
     height: 8px;
     width: 300px;
   }
-
+  h1 {
+    font-size: 42px;
+  }
+  .header__description {
+    width: 74%;
+  }
+  .container {
+    padding: 32px 0;
+  }
+  #quality .section__title {
+    max-width: 360px;
+    font-size: 34px;
+  }
+  #steps .section__title {
+    font-size: 42px;
+  }
+  #values .section__title {
+    font-size: 42px;
+  }
+  #testimonials .section__title {
+    font-size: 42px;
+  }
   .plan__strip--personal {
     height: 8px;
     width: 300px;
@@ -1343,13 +1377,19 @@ MOBILE RESPONSIVENESS ↓
     padding: 20px 89px;
   }
   .r__l--wrapper {
-    margin-left: 99px;
+    margin-left: 27px;
   }
   .footer__socials {
     margin-right: 138px;
   }
   .footer__copyright {
     margin-left: 62px;
+  }
+  .start__title {
+    z-index: 1;
+  }
+  .footer__columns {
+    z-index: 1;
   }
 }
 
@@ -1358,39 +1398,82 @@ MOBILE RESPONSIVENESS ↓
   #values .row {
     flex-direction: column-reverse;
   }
+  .nav__links {
+    display: none;
+  }
+  .nav__logo {
+    margin-left: 200px;
+  }
   .btn {
     margin-left: 277px;
   }
-
+  .nav__link {
+    margin: 0 12px;
+  }
   .plan__strip--personal {
     height: 8px;
-    width: 582px;
+    width: 682px;
   }
-  .plans__blob {
-  top: 281px;
-  right: 1066px;
+  .btn__menu {
+    display: block;
+    margin-right: 186px;
   }
 
+  .plans__blob {
+    top: 281px;
+    right: 1066px;
+  }
+  h1 {
+    font-size: 37px;
+  }
+  #values .btn {
+    margin-top: 32px;
+  }
+  .testimonial__profile--wrapper {
+    justify-content: center;
+    justify-content: space-evenly;
+  }
+  .start__row {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    z-index: 1;
+  }
+  .start__title {
+    font-size: 22px;
+  }
+  .footer__logo {
+    margin-left: 0px;
+  }
+  .footer__socials {
+    margin-right: 8px;
+  }
+  .footer__social--link {
+    z-index: 1;
+  }
   #pricing .plans__list--wrapper {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: stretch;
-    gap: 32px;
     width: 200vh;
-    margin-top: 64px;
-    position: relative;
-    isolation: isolate;
-    overflow: visible;
-    margin-left: 62px;
+    margin-left: 6px;
   }
   .plan__strip--ep {
     left: 0;
     height: 8px;
-    width: 583px;
+    width: 682px;
     margin-top: 1412px;
   }
-
+  .plans__ep--wrapper {
+    margin-bottom: 32px;
+  }
+  .plans__blob {
+    top: 271px;
+    right: 1280px;
+  }
   .container {
     padding: 32px 0;
   }
@@ -1411,17 +1494,87 @@ MOBILE RESPONSIVENESS ↓
     justify-content: center;
     gap: 64px;
   }
+  .btn__menu {
+    display: block;
+  }
+  .modal {
+    position: absolute;
+  }
 }
 
 @media (max-width: 640px) {
   .container {
     padding: 80px 0;
   }
+  .btn__menu {
+    display: block;
+    margin-right: 64px;
+  }
+  .container {
+    padding: 32px 0;
+  }
+
   .nav__logo {
-    margin: 8px 0;
-    padding-bottom: 4px;
+    margin-left: 200px;
   }
   main {
     margin-bottom: 80px;
+  }
+  .nav__links {
+    display: none;
+  }
+  #features .features {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 40px;
+    gap: 10px;
+    justify-content: center;
+    justify-content: space-evenly;
+  }
+  .feature__img--wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    width: 116px;
+    height: 50px;
+    border: 1px solid #e5e7eb;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  #quality .section__tag {
+    margin-top: 32px;
+  }
+  #quality .btn {
+    margin-left: 200px;
+  }
+  .feature__img {
+    width: 30px;
+  }
+  #values .section__tag {
+    font-size: 20px;
+    font-weight: 700;
+    justify-content: center;
+    display: flex;
+  }
+  #values .section__title {
+    font-size: 32px;
+    margin-left: 157px;
+  }
+  .values__description {
+    padding: 0;
+  }
+  #pricing .plans__list--wrapper {
+    width: 168vh;
+  }
+  .plan__strip--personal {
+    width: 574px;
+  }
+  .plan__strip--ep {
+    width: 574px;
+  }
+  .modal {
+    position: absolute;
   }
 }
