@@ -1366,6 +1366,10 @@ MOBILE RESPONSIVENESS ↓
     height: 8px;
     width: 582px;
   }
+  .plans__blob {
+  top: 281px;
+  right: 1066px;
+  }
 
   #pricing .plans__list--wrapper {
     display: flex;
