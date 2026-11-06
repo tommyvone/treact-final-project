@@ -23,7 +23,7 @@
   letter-spacing: 0.025em;
 }
 img {
-  width: 100%;
+  width: 50%;
 }
 
 body {
@@ -56,7 +56,7 @@ h1 {
 }
 
 .container {
-  padding: 96px 0;
+  padding-top: 64px 0;
 }
 
 .btn {
@@ -546,11 +546,6 @@ VALUES ↓
   align-items: center;
 }
 
-#values .row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 .values__description {
   padding: 32px 64px 32px 0;
 }
@@ -558,13 +553,13 @@ VALUES ↓
   font-size: 20px;
   font-weight: 700;
 }
-#values .section__title {
-  font-size: 48px;
-  font-weight: 900;
-  color: #243e63;
-  line-height: 1.5;
-  margin: 16px 0;
-  letter-spacing: 0.025em;
+
+  #values .section__title {
+	margin-top: 16px;
+	margin-bottom: 32px;
+}
+.values__description, .values__img {
+	width: 50%;
 }
 #values .section__para {
   font-size: 18px;
@@ -612,11 +607,12 @@ VALUES ↓
   line-height: 1.625;
   color: #718096;
 }
+
 #values .row {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
-
 #values .btn {
   background-color: #6415ff;
   padding: 12px 32px;
@@ -627,15 +623,8 @@ VALUES ↓
   border: none;
   border-radius: 500px;
 }
-#values .section__title {
-  margin-top: 16px;
-  margin-bottom: 32px;
-}
-#values .row {
-  display: flex;
-  max-width: 1280px;
-  margin: 0 auto;
-}
+
+
 /*
 
 PRICING section ↓s
@@ -1229,7 +1218,9 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
 }
 .footer__column--link {
   display: flex;
@@ -1251,11 +1242,27 @@ footer {
   margin: 64px auto 0;
   border: none;
 }
+  .footer__bottom {
+	display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 56px;
+  max-width: 1200px;
+  width: 100%;
+  border-top: none;
+  justify-content: space-between;
+}
+.footer__logo {
+	display: flex;
+	align-items: center;
+	justify-self: start;
+	gap: 8px;
+}
 .footer__logo--img {
   height: 34px;
   width: 34px;
 }
-
 .footer__logo--text {
   font-size: 24px;
   color: #ffffff;
@@ -1263,44 +1270,47 @@ footer {
   margin: 0;
   letter-spacing: 0.02em;
 }
-.footer__logo {
-  position: absolute;
-  display: flex;
-  gap: 8px;
-  align-items: center;
-  margin-top: 64px;
-  margin-left: 159px;
-}
 .footer__copyright {
+  justify-self: center;
+  color: rgb(203, 213, 224);
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  white-space: nowrap
+}
+.footer__socials {
   display: flex;
-  justify-content: center;
-  color: #ffffff;
-  margin-top: 70px;
+  justify-self: end;
+  justify-content: flex-end;
+  align-items: center;
+  gap: -16px;
+}
+.footer__social--link svg {
+  height: 16px;
+  width: 16px;
 }
 
-.footer__social--link svg {
+.footer__social--link {
+  margin-left: 16px;
+  padding: 8px;
+  background: #f7fafc;
   display: flex;
-  height: 32px;
-  width: 32px;
-  background-color: white;
-  border-radius: 900px;
+  justify-content: center;
+  border-radius: 50%;
+  z-index: 2;
   cursor: pointer;
-  transition: all 300ms ease;
+  transition: all 300ms ease; 
+  .footer__social--link svg {
+  height: 16px;
+  width: 16px;
 }
 svg:not(:root) {
   overflow-clip-margin: content-box;
   overflow: hidden;
 }
-.footer__socials {
-  display: flex;
-  flex-direction: row;
-  gap: 16px;
-  margin-top: -22px;
-  justify-content: right;
-  margin-right: 200px;
-}
 
 /* 
+
 
 MOBILE RESPONSIVENESS ↓
 
@@ -1311,8 +1321,8 @@ MOBILE RESPONSIVENESS ↓
     align-items: flex-end;
   }
   .nav__link {
-  font-size: 20px;
-  font-weight: 900;
+    font-size: 20px;
+    font-weight: 900;
   }
 }
 
@@ -1320,13 +1330,13 @@ MOBILE RESPONSIVENESS ↓
   .btn__menu {
     display: block;
   }
-  .nav__links{
+  .nav__links {
     display: none;
   }
-  .btn__menu{
+  .btn__menu {
     margin-right: 350px;
   }
-  .nav__logo{
+  .nav__logo {
     margin-left: 350px;
   }
   header .row {
@@ -1576,5 +1586,13 @@ MOBILE RESPONSIVENESS ↓
   }
   .modal {
     position: absolute;
+  }
+}
+@media (max-width: 393px) {
+  header .row {
+    align-items: flex-end;
+  }
+  .nav__logo {
+    margin-left: 30px;
   }
 }
