@@ -1758,7 +1758,7 @@ MOBILE RESPONSIVENESS ↓
   }
  .footer__row{
   align-items: normal;
-  gap: 32px;
+  gap: 16px;
  }
 .footer__bottom {
     display: flex;
@@ -1777,4 +1777,15 @@ MOBILE RESPONSIVENESS ↓
     color: #ffffff;
     margin-top: 6px;
 }
+.footer__column--link {
+        display: flex;
+        color: #ffffff;
+        margin-top: 6px;
+        font-size: 12px;
+}
+.footer__column--title {
+    margin-bottom: 24px;
+   
+}
+
 }
