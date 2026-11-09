@@ -1772,7 +1772,9 @@ MOBILE RESPONSIVENESS ↓
     .footer__socials {
         margin-top: 32px;
     }
-
-  
-
+.footer__column--link {
+    display: flex;
+    color: #ffffff;
+    margin-top: 6px;
+}
 }
