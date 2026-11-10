@@ -28,7 +28,7 @@ body {
   letter-spacing: 0.025em;
 }
 img {
-  width: 50%;
+  width: 100%;
 }
 
 h1 {
@@ -55,7 +55,7 @@ h1 {
   margin: 0 auto;
 }
 .container {
-  padding-top: 64px 0;
+  padding-top: 96px;
 }
 
 .btn {
@@ -559,7 +559,7 @@ VALUES ↓
 }
 
 .values__img {
-  width: 100%;
+  width: 50%;
 }
 #values .section__para {
   font-size: 18px;
@@ -1101,13 +1101,7 @@ START / CALL TO ACTION ↓
   position: relative;
   overflow: hidden;
 }
-#start .container {
-  width: 100%;
-  height: auto;
-  min-height: 240px;
-  padding: 64px 32px;
-  box-sizing: border-box;
-}
+
 .start__blob--1 {
   position: absolute;
   bottom: 0px;
@@ -1399,9 +1393,7 @@ MOBILE RESPONSIVENESS ↓
     display: flex;
     flex-direction: column;
   }
-  .container {
-    padding: 32px 0;
-  }
+
   #quality .section__title {
     max-width: 360px;
     font-size: 34px;
@@ -1538,9 +1530,7 @@ MOBILE RESPONSIVENESS ↓
     top: 271px;
     right: 1280px;
   }
-  .container {
-    padding: 32px 0;
-  }
+
   #steps .row,
   #testimonials .row {
     flex-direction: column;
