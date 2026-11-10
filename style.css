@@ -7,7 +7,8 @@
   font-family: "Inter", system-ui;
   color: #243e63;
 }
-html, body {
+html,
+body {
   max-width: 100%;
   overflow-x: hidden;
 }
@@ -1745,36 +1746,33 @@ MOBILE RESPONSIVENESS ↓
     color: white;
     font-weight: 700;
   }
- .footer__row{
-  align-items: normal;
-  gap: 16px;
- }
-.footer__bottom {
+  .footer__row {
+    align-items: normal;
+    gap: 16px;
+  }
+  .footer__bottom {
     display: flex;
     flex-direction: column;
-   
-}
-    .footer__logo {
-        margin-left: 0px;
-        margin-bottom: 16px;
-    }
-    .footer__socials {
-        margin-top: 32px;
-    }
-.footer__column--link {
+  }
+  .footer__logo {
+    margin-left: 0px;
+    margin-bottom: 16px;
+  }
+  .footer__socials {
+    margin-top: 32px;
+  }
+  .footer__column--link {
     display: flex;
     color: #ffffff;
     margin-top: 6px;
-}
-.footer__column--link {
-        display: flex;
-        color: #ffffff;
-        margin-top: 6px;
-        font-size: 12px;
-}
-.footer__column--title {
+  }
+  .footer__column--link {
+    display: flex;
+    color: #ffffff;
+    margin-top: 6px;
+    font-size: 12px;
+  }
+  .footer__column--title {
     margin-bottom: 24px;
-   
-}
-
+  }
 }
