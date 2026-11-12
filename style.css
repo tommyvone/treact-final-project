@@ -1823,4 +1823,7 @@ MOBILE RESPONSIVENESS ↓
   .footer__column--title {
     margin-bottom: 24px;
   }
+  .header__email--input{
+    padding:20px 165px 20px 32px ;
+  }
 }
