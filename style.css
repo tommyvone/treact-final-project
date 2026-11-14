@@ -1735,6 +1735,9 @@ MOBILE RESPONSIVENESS ↓
     flex-direction: column;
     align-items: center;
   }
+  .values__img{
+   width: 100%;
+}
   .features{
    
     display: flex;
@@ -1764,7 +1767,7 @@ MOBILE RESPONSIVENESS ↓
     align-items: center;
     justify-content: center;
     margin-left: 46px;
-  }
+  }\
   .plan__strip--personal {
     height: 8px;
     width: 365px;
