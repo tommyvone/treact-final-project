@@ -231,7 +231,7 @@ HEADER / ABOUT US ↓
 
 */
 .header__img {
-  width: 100%;
+  width: 50%;
   max-width: 768px;
 }
 .header__customers--title {
