@@ -1742,7 +1742,9 @@ MOBILE RESPONSIVENESS ↓
     margin-right: 100px;
     width: calc();
   }
-  
+  .feature__para {
+        line-height: 32px;
+    }
   #values .section__title {
     font-size: 30px;
     line-height: 1.3;
