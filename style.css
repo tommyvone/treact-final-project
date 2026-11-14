@@ -1401,8 +1401,8 @@ MOBILE RESPONSIVENESS ↓
     align-items: center;
   }
   .header__img--wrapper {
-    width: 100%;
-    max-width: 768px;
+   display:flex;
+  justify-content: right;
   }
   footer {
     padding: 80px 32px;
