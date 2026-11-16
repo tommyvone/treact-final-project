@@ -1531,11 +1531,13 @@ MOBILE RESPONSIVENESS ↓
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 500px;
     align-items: center;
     justify-content: center;
     gap: 32px;
     z-index: 1;
+  }
+  #start__container {
+    height: 500px;
   }
   .start__title {
     font-size: 22px;
