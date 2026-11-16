@@ -1849,4 +1849,14 @@ MOBILE RESPONSIVENESS ↓
   .header__email--input{
     padding:20px 165px 20px 32px ;
   }
+
+  .footer__copyright {
+    justify-self: center;
+    color: rgb(203, 213, 224);
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    white-space: nowrap;
+    z-inex: 1;
+}
 }
